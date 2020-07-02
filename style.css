@@ -1,8 +1,8 @@
 body {
     font-family: 'Noto Sans HK', sans-serif;
-    background-image: url("img/background.jpg");
+    background-color: antiquewhite;
+    /* background-image: url("img/background.jpg"); */
     background-size: cover;
-    backdrop-filter: blur(500px);
 }
 
 h1 {
@@ -26,26 +26,31 @@ h1 {
     box-shadow: 15px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
 }
-.profile-picture {
+#profile-picture {
     margin-left: auto;
     margin-right: auto;
     border-radius: 20%;
     box-shadow: 7px 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+#bio {
+    position: absolute;
 }
 
 .linkhole {
     display: grid;
     height: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0%;
+    column-gap: 20px;
 }
 
 .link {
+    border: 5px solid rgba(255, 255, 255, 0.0);
+}
+.link:hover {
+    border: 5px solid aquamarine;
+    border-radius: 10px;
 }
 
-a:hover {
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 5px solid aquamarine;
-    border-radius: 15%;
+.link:-webkit-any-link {
+    text-decoration: none;
 }
